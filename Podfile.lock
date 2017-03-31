@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Locksmith (3.0.0)
+  - PromiseKit (4.1.7):
+    - PromiseKit/Foundation (= 4.1.7)
+    - PromiseKit/QuartzCore (= 4.1.7)
+    - PromiseKit/UIKit (= 4.1.7)
+  - PromiseKit/CorePromise (4.1.7)
+  - PromiseKit/Foundation (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.7):
+    - PromiseKit/CorePromise
+  - SObjectKit (0.39.4):
+    - SwiftyJSON (>= 3.0.0)
+  - SwiftlySalesforce (3.4.0):
+    - Alamofire (~> 4.0)
+    - Locksmith (~> 3.0)
+    - PromiseKit (~> 4.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - SObjectKit
+  - SwiftlySalesforce
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
+  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
+  SObjectKit: e06adb94768ee3673bfdf255530462d9df1facef
+  SwiftlySalesforce: 2907b270e06d7a81352f5cb6e10d3edfdbdd7135
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 3401a92949454c33583080dd7454b8087676899d
+
+COCOAPODS: 1.1.1
