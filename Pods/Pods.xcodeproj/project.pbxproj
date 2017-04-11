@@ -216,7 +216,7 @@
 /* Begin PBXFileReference section */
 		085095AEC6E414C927871D8C1589506E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		0A5141FC5A392EBFE4E45E83CDE1FC29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C3725AF33DEE47E5FD3D35248C1209A /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3725AF33DEE47E5FD3D35248C1209A /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5B1B835C68C8F1229D94D4E45D8BA9 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		0D519C320BF4EA446695DD3CB74E5766 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
 		0EB1147DAB782C2DEBB02BCF7D1E2570 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		1D4635954F3DB6B5DE448225874888CC /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		1D6C970BC6E2DCEB1244D8721C401617 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		204D228A05C5494AB039EA845A2EAC31 /* NSURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSURL.swift; path = SObjectKit/Classes/NSURL.swift; sourceTree = "<group>"; };
-		27208CAC4B35D670CAAD503E36CFF817 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27208CAC4B35D670CAAD503E36CFF817 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2791CE7F6E61D626F509CB5AA84AA2EE /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		285BC783DF76F0BE72471358681764F0 /* Contact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = SObjectKit/Classes/Contact.swift; sourceTree = "<group>"; };
 		29D4C52C13583C172BC73E1FC358BE6E /* Pods-SalesforceViews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SalesforceViews-umbrella.h"; sourceTree = "<group>"; };
@@ -241,8 +241,8 @@
 		32A2C21D65B6EA44059CADD28CCB4458 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Pod/Classes/Router.swift; sourceTree = "<group>"; };
 		33FABB10710F97AB642D0136D6A09E71 /* Locksmith.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Locksmith.xcconfig; sourceTree = "<group>"; };
 		355D9445B6011A8F5901D08A0BB110F7 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		37D2D3175B27E20B11FB761D3ED06F71 /* SObjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SObjectKit.framework; path = SObjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B588F6B443404ECFD58A2BA6433E443 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		37D2D3175B27E20B11FB761D3ED06F71 /* SObjectKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SObjectKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B588F6B443404ECFD58A2BA6433E443 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		3D08A991D35A624E1F13DB8D0B28715E /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		3D21071279808BD795436BB4E469E534 /* Pods-SalesforceViews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesforceViews-frameworks.sh"; sourceTree = "<group>"; };
 		3E5E10DE1CEA7546217DCD29B7297D9F /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
@@ -250,18 +250,18 @@
 		40BD6CA0D5F699BBE771B8181C629C17 /* AuthData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthData.swift; path = Pod/Classes/AuthData.swift; sourceTree = "<group>"; };
 		41C2DE5577D7DBBC71C50C501C28E8E2 /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
 		423D95BA034E0F807CDC913FD8D9A660 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		428B01B553207B7E87819762D51DC4E0 /* Pods-SalesforceViews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SalesforceViews.modulemap"; sourceTree = "<group>"; };
+		428B01B553207B7E87819762D51DC4E0 /* Pods-SalesforceViews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SalesforceViews.modulemap"; sourceTree = "<group>"; };
 		4738D082CD84189A59C3C0BDA9EB0DDB /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		48342FE1AE1AD215EF39B9291C78955A /* SObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SObject.swift; path = SObjectKit/Classes/SObject.swift; sourceTree = "<group>"; };
 		4891973016E424AB66C07A80D8FAE83A /* SObjectKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SObjectKit-umbrella.h"; sourceTree = "<group>"; };
 		4B010DA0B5B1DBB872B6684ADD3113BF /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		4BA13AC533F0171C567919528D187447 /* Salesforce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Salesforce.swift; path = Pod/Classes/Salesforce.swift; sourceTree = "<group>"; };
 		4BC7CEC52DA2E00204503ED40355BE56 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
-		4BD6A027E14E31F19AC66035CCE73632 /* SObjectKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SObjectKit.modulemap; sourceTree = "<group>"; };
+		4BD6A027E14E31F19AC66035CCE73632 /* SObjectKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SObjectKit.modulemap; sourceTree = "<group>"; };
 		4EEF76DD056716B70BFBDA47A32AE559 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		4FEB611D32ACB770368C292937E1561F /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		508DE3289CD2B5174AC94ED1D61D05B3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		5128B28BD333E52F274A192CEACEB2B5 /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftlySalesforce.framework; path = SwiftlySalesforce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5128B28BD333E52F274A192CEACEB2B5 /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftlySalesforce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5161F9FFDCDE9602680C46E69F8AD8CF /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
 		5199EAC41464C3443CB4494CA4BF7895 /* Pods-SalesforceViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SalesforceViews-dummy.m"; sourceTree = "<group>"; };
 		51EF919A68C4A6BE9183A277773A6AE6 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
@@ -271,24 +271,24 @@
 		55C605102C9D2A8278F2A1228491AC45 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		5638141EE5A567FE7E34FBBD31AC50CD /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		5797AB4D6DD36060DFFC3F7B122950B8 /* NSDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDate.swift; path = SObjectKit/Classes/NSDate.swift; sourceTree = "<group>"; };
-		61B969AA861F407F8A5C6C6F5B624311 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Locksmith.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B969AA861F407F8A5C6C6F5B624311 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CEE2478BAA84C1D6202B17B69648BD /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
 		6301311BDA86A669E33BFFC0CFB3E88A /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		63787DF5A2CA9DE4305ABA8095272BE8 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
 		63DBBF7822595749CC93293739B1F316 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
 		64600D4EA0E9FB7AB07CF1EF871A1ABD /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/State.swift; sourceTree = "<group>"; };
-		64AFA468B1F9A9026E9C91BB8D94C07A /* SwiftlySalesforce.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftlySalesforce.modulemap; sourceTree = "<group>"; };
+		64AFA468B1F9A9026E9C91BB8D94C07A /* SwiftlySalesforce.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftlySalesforce.modulemap; sourceTree = "<group>"; };
 		64C523FD7359036E5A67A59BB3E50F50 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		682F0A3342B6CB3D8F2A06EB01A0502E /* LoginDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Pod/Classes/LoginDelegate.swift; sourceTree = "<group>"; };
 		6CDCC9AEB6D99221237E0B290848DBD6 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = SObjectKit/Classes/UIView.swift; sourceTree = "<group>"; };
 		6DC16B2FE5B334DF8B8CEA60C82D0592 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		71F02ABD33AE47518C31A7A9D0DE4B66 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		736F360D8ED4E8C07A434282D65B3037 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
-		793985CC6850D3ACE81C35253F2BDB35 /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Locksmith.modulemap; sourceTree = "<group>"; };
+		793985CC6850D3ACE81C35253F2BDB35 /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Locksmith.modulemap; sourceTree = "<group>"; };
 		7AC1804C1ADD82917967812B56EB23B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		7DC7344C9BE8929F1E02736433DCEEC4 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = SObjectKit/Classes/JSON.swift; sourceTree = "<group>"; };
 		80E69A75F69E2940AB591850D2D516EF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8154C9264B18E24C23488688B3AF2CB6 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		8154C9264B18E24C23488688B3AF2CB6 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		826FD4ABB70024DF0B9E53636E0D489B /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = SObjectKit/Classes/UIImage.swift; sourceTree = "<group>"; };
 		8372F4B2A98FD841D894BCD4485DF6F2 /* CustomSObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSObject.swift; path = SObjectKit/Classes/CustomSObject.swift; sourceTree = "<group>"; };
 		84F0F8A363BD66C42F3F8A36F692EC91 /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 		91D34CBFF145AEB637C10522DEFF3FCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92E1E52FA9B83EF74A48D639F9576F16 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		93724B0AE2404ADEC9EC4A59A00F572D /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		945FAC96353AD8FFAB6617331FDAC36E /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
 		95DE3DD01A24BD74200574A8AB5929F0 /* AuthDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthDataStore.swift; path = Pod/Classes/AuthDataStore.swift; sourceTree = "<group>"; };
 		96F19737768DEF012BF2316D9499DF86 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Pod/Classes/Globals.swift; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 		A4A7F02CB0574934A347AB6AE2AB0914 /* Promise+AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+AnyPromise.swift"; path = "Sources/Promise+AnyPromise.swift"; sourceTree = "<group>"; };
 		A4A813797FDF48184C0A7E4F570412C1 /* PricebookEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PricebookEntry.swift; path = SObjectKit/Classes/PricebookEntry.swift; sourceTree = "<group>"; };
 		A6DB6C0EDA13481FA8FD93230604782B /* UIDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDevice.swift; path = SObjectKit/Classes/UIDevice.swift; sourceTree = "<group>"; };
-		A743A21D73F9239044FA31CF76CBD3C5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		A743A21D73F9239044FA31CF76CBD3C5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		A8D12CF2F0E70FE5C356C43A326D8AB7 /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = SObjectKit/Classes/Address.swift; sourceTree = "<group>"; };
 		AA0D1E0B359E25BAF260100B210A89AA /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
 		AA414066DC84FBF5267AA86C91B36657 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		B6B57F4BC42399BBF09A32D4DD64C07A /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		B6ED11CC00F003DB441893FB78985A6E /* PMKQuartzCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKQuartzCore.h; path = Extensions/QuartzCore/Sources/PMKQuartzCore.h; sourceTree = "<group>"; };
 		B87C69495974F0C967E0C0A039E03E1F /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
-		B9B6A13E2104A8289EC8798E14E75A97 /* Pods_SalesforceViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SalesforceViews.framework; path = "Pods-SalesforceViews.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B6A13E2104A8289EC8798E14E75A97 /* Pods_SalesforceViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesforceViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB83365DE29DF3C12C9753CA00B6ADE /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC58AF28703D44D1885D2C12A2DEF4A0 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = SObjectKit/Classes/String.swift; sourceTree = "<group>"; };
 		BE348D9305B7A1C7EFB3F74ADE582D1A /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = Pod/Classes/AuthManager.swift; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 		CA6E8465F3D63251B4EFCE2FD75D8DA6 /* Pods-SalesforceViews-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SalesforceViews-resources.sh"; sourceTree = "<group>"; };
 		CD70D5202C76F9DD4DC2DF9223979587 /* OpportunityLineItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpportunityLineItem.swift; path = SObjectKit/Classes/OpportunityLineItem.swift; sourceTree = "<group>"; };
 		CE0F1D5D2C578B7C70957ED5125DF56D /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
-		CF91B835348F2D0ADF9B5C32150D2ADC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF91B835348F2D0ADF9B5C32150D2ADC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04DFB17D2F9B734A0637293EEBA55CE /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
 		D214F86CAC230036F0704ECFE009D21F /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		D3416E665B542FB4A03CD437A9083A6C /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
@@ -603,7 +603,6 @@
 				B4D4D0520BC76652CDFB48D3782DCAF3 /* SalesforceError.swift */,
 				56D367C8A1DE3F55477BB47F0A9C6E7D /* Support Files */,
 			);
-			name = SwiftlySalesforce;
 			path = SwiftlySalesforce;
 			sourceTree = "<group>";
 		};
@@ -699,7 +698,6 @@
 				E297AAF623BE699C4D247D59E2201D5B /* LocksmithSecurityClass.swift */,
 				6221D2915A9C42D054837E3AD277F260 /* Support Files */,
 			);
-			name = Locksmith;
 			path = Locksmith;
 			sourceTree = "<group>";
 		};
@@ -725,7 +723,6 @@
 				86F4673BD0ECD5482F1F8122B757C4C4 /* Validation.swift */,
 				050D7534B7371C78D409763B37D729AC /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -735,7 +732,6 @@
 				6301311BDA86A669E33BFFC0CFB3E88A /* SwiftyJSON.swift */,
 				20D38C369752D13EE9462F1B0625E969 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -763,7 +759,6 @@
 				6CDCC9AEB6D99221237E0B290848DBD6 /* UIView.swift */,
 				3008D65FEC8D581C50DA1FE6311380B0 /* Support Files */,
 			);
-			name = SObjectKit;
 			path = SObjectKit;
 			sourceTree = "<group>";
 		};
@@ -804,7 +799,6 @@
 				2A55067F04389FA14118B3BAEC95CBB8 /* Support Files */,
 				4C247AE4259F0679B2D77FC86CC3D06D /* UIKit */,
 			);
-			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -1416,7 +1410,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SObjectKit/SObjectKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SObjectKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SObjectKit/SObjectKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1656,7 +1650,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SObjectKit/SObjectKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SObjectKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SObjectKit/SObjectKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;

@@ -12,6 +12,18 @@
 		5A0FF9811E8EBBBC00DE6A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF97F1E8EBBBC00DE6A2C /* Main.storyboard */; };
 		5A0FF9831E8EBBBC00DE6A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF9821E8EBBBC00DE6A2C /* Assets.xcassets */; };
 		5A0FF9861E8EBBBC00DE6A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FF9841E8EBBBC00DE6A2C /* LaunchScreen.storyboard */; };
+		5A7DDF9E1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDF9D1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift */; };
+		5A7DDFA61E98BC3E003B5F93 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFA21E98BC3E003B5F93 /* UIColor.swift */; };
+		5A7DDFA71E98BC3E003B5F93 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFA31E98BC3E003B5F93 /* UIImage.swift */; };
+		5A7DDFA81E98BC3E003B5F93 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFA41E98BC3E003B5F93 /* UIImageView.swift */; };
+		5A7DDFA91E98BC3E003B5F93 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFA51E98BC3E003B5F93 /* UIView.swift */; };
+		5A7DDFAC1E98C34D003B5F93 /* Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7DDFAB1E98C34D003B5F93 /* Address.xib */; };
+		5A7DDFAE1E98C550003B5F93 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFAD1E98C550003B5F93 /* AddressViewController.swift */; };
+		5A7DDFB01E98CC88003B5F93 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFAF1E98CC88003B5F93 /* AccountDetailsViewController.swift */; };
+		5A7DDFB21E98D29C003B5F93 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDFB11E98D29C003B5F93 /* Bundle.swift */; };
+		5A9F35D01E972F8A00B64E72 /* AccountTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */; };
+		5A9F35D21E97328300B64E72 /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F35D11E97328300B64E72 /* Accounts.storyboard */; };
+		5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */; };
 		A0D6051D790EDDD56FCC1501 /* Pods_SalesforceViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +36,18 @@
 		5A0FF9821E8EBBBC00DE6A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0FF9851E8EBBBC00DE6A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0FF9871E8EBBBC00DE6A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7DDF9D1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesforceViewsDefaults.swift; sourceTree = "<group>"; };
+		5A7DDFA21E98BC3E003B5F93 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		5A7DDFA31E98BC3E003B5F93 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		5A7DDFA41E98BC3E003B5F93 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		5A7DDFA51E98BC3E003B5F93 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5A7DDFAB1E98C34D003B5F93 /* Address.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Address.xib; sourceTree = "<group>"; };
+		5A7DDFAD1E98C550003B5F93 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		5A7DDFAF1E98CC88003B5F93 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		5A7DDFB11E98D29C003B5F93 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableCellViewController.swift; sourceTree = "<group>"; };
+		5A9F35D11E97328300B64E72 /* Accounts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Accounts.storyboard; sourceTree = "<group>"; };
+		5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		A72D5A8C0A8CC7900B82B60C /* Pods-SalesforceViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.release.xcconfig"; sourceTree = "<group>"; };
 		D902FA555E183751E0AD0703 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +85,66 @@
 		5A0FF97A1E8EBBBC00DE6A2C /* SalesforceViews */ = {
 			isa = PBXGroup;
 			children = (
-				5A0FF97B1E8EBBBC00DE6A2C /* AppDelegate.swift */,
-				5A0FF97D1E8EBBBC00DE6A2C /* ViewController.swift */,
-				5A0FF97F1E8EBBBC00DE6A2C /* Main.storyboard */,
+				5A7DDFA11E98BBDC003B5F93 /* Views */,
+				5A7DDF9F1E98BAD0003B5F93 /* SampleApp */,
 				5A0FF9821E8EBBBC00DE6A2C /* Assets.xcassets */,
-				5A0FF9841E8EBBBC00DE6A2C /* LaunchScreen.storyboard */,
-				5A0FF9871E8EBBBC00DE6A2C /* Info.plist */,
 			);
 			path = SalesforceViews;
+			sourceTree = "<group>";
+		};
+		5A7DDF9F1E98BAD0003B5F93 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				5A0FF97B1E8EBBBC00DE6A2C /* AppDelegate.swift */,
+				5A0FF97D1E8EBBBC00DE6A2C /* ViewController.swift */,
+				5A0FF9871E8EBBBC00DE6A2C /* Info.plist */,
+				5A0FF97F1E8EBBBC00DE6A2C /* Main.storyboard */,
+				5A0FF9841E8EBBBC00DE6A2C /* LaunchScreen.storyboard */,
+			);
+			name = SampleApp;
+			sourceTree = "<group>";
+		};
+		5A7DDFA01E98BBD0003B5F93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A7DDFB11E98D29C003B5F93 /* Bundle.swift */,
+				5A7DDFA21E98BC3E003B5F93 /* UIColor.swift */,
+				5A7DDFA31E98BC3E003B5F93 /* UIImage.swift */,
+				5A7DDFA41E98BC3E003B5F93 /* UIImageView.swift */,
+				5A7DDFA51E98BC3E003B5F93 /* UIView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5A7DDFA11E98BBDC003B5F93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A7DDFAA1E98C32F003B5F93 /* Address */,
+				5A7DDF9D1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift */,
+				5A7DDFA01E98BBD0003B5F93 /* Extensions */,
+				5A9F35CC1E97291000B64E72 /* Account */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5A7DDFAA1E98C32F003B5F93 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				5A7DDFAB1E98C34D003B5F93 /* Address.xib */,
+				5A7DDFAD1E98C550003B5F93 /* AddressViewController.swift */,
+			);
+			name = Address;
+			sourceTree = "<group>";
+		};
+		5A9F35CC1E97291000B64E72 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F35D11E97328300B64E72 /* Accounts.storyboard */,
+				5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */,
+				5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */,
+				5A7DDFAF1E98CC88003B5F93 /* AccountDetailsViewController.swift */,
+			);
+			name = Account;
 			sourceTree = "<group>";
 		};
 		673FD2CA64D8BCE0B46767A0 /* Pods */ = {
@@ -152,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0FF9861E8EBBBC00DE6A2C /* LaunchScreen.storyboard in Resources */,
+				5A7DDFAC1E98C34D003B5F93 /* Address.xib in Resources */,
+				5A9F35D21E97328300B64E72 /* Accounts.storyboard in Resources */,
 				5A0FF9831E8EBBBC00DE6A2C /* Assets.xcassets in Resources */,
 				5A0FF9811E8EBBBC00DE6A2C /* Main.storyboard in Resources */,
 			);
@@ -212,8 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7DDFA81E98BC3E003B5F93 /* UIImageView.swift in Sources */,
+				5A7DDFB21E98D29C003B5F93 /* Bundle.swift in Sources */,
+				5A7DDF9E1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift in Sources */,
+				5A7DDFA61E98BC3E003B5F93 /* UIColor.swift in Sources */,
+				5A7DDFAE1E98C550003B5F93 /* AddressViewController.swift in Sources */,
+				5A9F35D01E972F8A00B64E72 /* AccountTableCellViewController.swift in Sources */,
 				5A0FF97E1E8EBBBC00DE6A2C /* ViewController.swift in Sources */,
+				5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */,
+				5A7DDFB01E98CC88003B5F93 /* AccountDetailsViewController.swift in Sources */,
 				5A0FF97C1E8EBBBC00DE6A2C /* AppDelegate.swift in Sources */,
+				5A7DDFA91E98BC3E003B5F93 /* UIView.swift in Sources */,
+				5A7DDFA71E98BC3E003B5F93 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -381,6 +469,7 @@
 				5A0FF98C1E8EBBBC00DE6A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
