@@ -15,14 +15,38 @@ class AccountDetailsViewController : UIViewController {
     @IBOutlet weak var rightBarButton: UIBarButtonItem!
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var shippingAddressView: AddressViewController!
-    public var sobjectdata : Account?
+    @IBOutlet weak var shippingAddressView: UIView!
+    public var sobjectdata : Account? {
+        didSet {
+            
+        }
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData(notification:)), name: NSNotification.Name(rawValue: ViewNotifications.accountDetail), object: nil)
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navItem.title = sobjectdata?.Name
         
-        shippingAddressView.addSubview(Bundle.loadView(fromNib: "Address", withType: AddressViewController.self))
+        let shipview = Bundle.loadView(fromNib: "Address", withType: AddressViewController.self) 
+        shipview.sobjectdata = sobjectdata?.ShippingAddress
+        shippingAddressView.addSubview(shipview)
+        
+        navItem.title = sobjectdata?.Name
+        name?.text = sobjectdata?.Name
+        
+    }
+    
+    func loadData(notification: NSNotification) {
+        
+        sobjectdata = notification.object as? Account
+        self.reloadInputViews()
         
     }
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import SObjectKit
+import SwiftlySalesforce
 
 class ViewController: UIViewController {
 
@@ -24,20 +25,33 @@ class ViewController: UIViewController {
 
     @IBAction func AccountButtonTapped(_ sender: UIButton) {
         
-        let a =  Account(id: "1234")
-        a.Name = "A Account"
-        a.TickerSymbol = "ABC"
-        a.Industry = "Finance"
+               
+        var data : [Account]?
         
-        let b =  Account(id: "4567")
-        b.Name = "B Account"
-        b.TickerSymbol = "ZZB"
-        b.Industry = "HighTech"
+        first {
+                salesforce.identity()
+            }.then { userInfo in
+                salesforce.query(soql: Account.soqlGetAllFields(nil))
+             }.then {
+                (result: QueryResult) -> () in
+                 data = Account.populateToCollection(result.records as NSArray) as? [Account]
+                
+                //show the storyboard
+                let storyboard = UIStoryboard(name: "Accounts", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "AccountsList") as! UINavigationController
+                self.present(controller, animated: true, completion: nil)
+                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: ViewNotifications.accountList), object: data)
+                
+            }.catch { error in
+                let sfdcerror = error as! SalesforceError
+                print(error)
+            }
         
-        let storyboard = UIStoryboard(name: "Accounts", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "AccountsList") as! AccountTableViewController
-        controller.sobjectdata = [a,b]
-        present(controller, animated: true, completion: nil)
+
+        
+        
+        
     }
    
 }

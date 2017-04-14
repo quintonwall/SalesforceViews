@@ -24,6 +24,8 @@ class AddressViewController : UIView {
             
             geolocation = CLLocation(latitude: sobjectdata!.latitude, longitude: sobjectdata!.longitude)
             centerMapOnLocation(location: geolocation!)
+            
+            
         }
     }
     

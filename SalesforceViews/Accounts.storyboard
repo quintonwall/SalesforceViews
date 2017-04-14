@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfC-F7-MVC" id="Q25-9a-BCI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niR-1s-md2" userLabel="LeftColorView">
@@ -84,7 +84,7 @@
                                     <outlet property="industryLabel" destination="mX5-xB-Ol2" id="765-sV-Cip"/>
                                     <outlet property="leftColorView" destination="niR-1s-md2" id="Ayb-cm-unm"/>
                                     <outlet property="tickerLabel" destination="HW9-hW-m9u" id="VH0-RF-hGX"/>
-                                    <segue destination="a8b-fs-Uf1" kind="show" id="B40-tl-fGJ"/>
+                                    <segue destination="a8b-fs-Uf1" kind="show" identifier="showAccountDetail" id="B40-tl-fGJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,7 +117,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-ro-QTh" customClass="AddressViewController" customModule="SalesforceViews" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-ro-QTh">
                                 <rect key="frame" x="43" y="179" width="240" height="84"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -164,7 +164,7 @@
                         <outlet property="name" destination="qxp-8k-QLt" id="TXo-z6-v1E"/>
                         <outlet property="navItem" destination="0ut-2F-4d1" id="fcw-tb-6QR"/>
                         <outlet property="rightBarButton" destination="1D5-3y-oyE" id="h1C-Oh-5SV"/>
-                        <outlet property="shippingAddressView" destination="Xsf-ro-QTh" id="iey-Ww-eNs"/>
+                        <outlet property="shippingAddressView" destination="Xsf-ro-QTh" id="9me-Xb-bkd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxT-Uh-vnV" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,17 +8,26 @@
 
 import UIKit
 import SObjectKit
+import NotificationCenter
 
 class AccountTableViewController: UITableViewController {
 
     public var sobjectdata : [Account]? {
         didSet {
-            
+            tableView.reloadData()
         }
     }
     
     @IBAction func doneTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData(notification:)), name: NSNotification.Name(rawValue: ViewNotifications.accountList), object: nil)
+        
+
     }
     
     override func viewDidLoad() {
@@ -29,8 +38,18 @@ class AccountTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
+    
+    
 
+    func loadData(notification: NSNotification) {
+        
+        sobjectdata = notification.object as? [Account]
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -117,14 +136,21 @@ class AccountTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showAccountDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! AccountDetailsViewController
+                destinationController.sobjectdata = sobjectdata?[indexPath.row]
+            }
+        }
+        
     }
-    */
+    
 
 }

@@ -24,6 +24,7 @@
 		5A9F35D01E972F8A00B64E72 /* AccountTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */; };
 		5A9F35D21E97328300B64E72 /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F35D11E97328300B64E72 /* Accounts.storyboard */; };
 		5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */; };
+		5AA381091EA0DAE000C218CF /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AA381081EA0DAE000C218CF /* testdata.json */; };
 		A0D6051D790EDDD56FCC1501 /* Pods_SalesforceViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableCellViewController.swift; sourceTree = "<group>"; };
 		5A9F35D11E97328300B64E72 /* Accounts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Accounts.storyboard; sourceTree = "<group>"; };
 		5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		5AA381081EA0DAE000C218CF /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
 		A72D5A8C0A8CC7900B82B60C /* Pods-SalesforceViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.release.xcconfig"; sourceTree = "<group>"; };
 		D902FA555E183751E0AD0703 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 				5A9F35CF1E972F8A00B64E72 /* AccountTableCellViewController.swift */,
 				5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */,
 				5A7DDFAF1E98CC88003B5F93 /* AccountDetailsViewController.swift */,
+				5AA381081EA0DAE000C218CF /* testdata.json */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				5A9F35D21E97328300B64E72 /* Accounts.storyboard in Resources */,
 				5A0FF9831E8EBBBC00DE6A2C /* Assets.xcassets in Resources */,
 				5A0FF9811E8EBBBC00DE6A2C /* Main.storyboard in Resources */,
+				5AA381091EA0DAE000C218CF /* testdata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
