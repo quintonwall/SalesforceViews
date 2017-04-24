@@ -19,6 +19,7 @@ class AddressViewController : UIView {
             streetLabel.text = sobjectdata?.street
             cityLabel.text = sobjectdata?.city
             countryLabel.text = ""
+           
             zipLabel.text = sobjectdata?.zip
             stateLabel.text = sobjectdata?.state
             
@@ -38,7 +39,11 @@ class AddressViewController : UIView {
     }
    
     //Shipping or Billing
-    @IBInspectable let addressType : String? = "Shipping"
+    @IBInspectable var title : String? = "Shipping" {
+        didSet {
+            titleLabel.text = title
+        }
+    }
     
     var geolocation : CLLocation?
     let locationManger:CLLocationManager = CLLocationManager()
@@ -50,6 +55,7 @@ class AddressViewController : UIView {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var zipLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+     @IBOutlet weak var titleLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -67,7 +73,7 @@ class AddressViewController : UIView {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 2.0, regionRadius * 2.0)
         let objectAnnotation = MKPointAnnotation()
         objectAnnotation.coordinate = location.coordinate
-        objectAnnotation.title = "\(addressType!) Address"
+        objectAnnotation.title = title
         self.mapView.addAnnotation(objectAnnotation)
         
         mapView.setRegion(coordinateRegion, animated: true)

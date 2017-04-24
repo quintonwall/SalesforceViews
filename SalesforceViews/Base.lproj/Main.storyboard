@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,16 +17,20 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kJS-hF-8la">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kJS-hF-8la">
+                                <rect key="frame" x="0.0" y="40" width="375" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1Y-Zg-ceR">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
-                                        <state key="normal" image="Account">
+                                        <rect key="frame" x="112.5" y="0.0" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="758-4n-KBX"/>
+                                            <constraint firstAttribute="width" constant="150" id="J67-7Y-aKg"/>
+                                        </constraints>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Accounts">
                                                     <attributes>
@@ -37,11 +41,16 @@
                                         </state>
                                         <connections>
                                             <action selector="AccountButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUS-Yy-CaJ"/>
+                                            <segue destination="Sae-bg-Wxd" kind="show" id="Fcl-FX-iiC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-42-dfN">
-                                        <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
-                                        <state key="normal" image="Opportunity">
+                                        <rect key="frame" x="112.5" y="50" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6bZ-FU-e17"/>
+                                            <constraint firstAttribute="width" constant="150" id="fP7-Gc-PcY"/>
+                                        </constraints>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Opportunities">
                                                     <attributes>
@@ -50,10 +59,17 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="BlX-Gc-ku8" kind="show" id="l2K-Ds-ATF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wv-i7-MCG" userLabel="Contacts">
-                                        <rect key="frame" x="0.0" y="333.5" width="375" height="167"/>
-                                        <state key="normal" image="Contacts">
+                                        <rect key="frame" x="112.5" y="100" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SF0-21-YRY"/>
+                                            <constraint firstAttribute="width" constant="150" id="rYj-Gx-CY4"/>
+                                        </constraints>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Contacts">
                                                     <attributes>
@@ -62,10 +78,17 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="o2c-eC-nn6" kind="show" id="wqj-zy-46d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enc-Kp-JtH">
-                                        <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
-                                        <state key="normal" image="Leads">
+                                        <rect key="frame" x="112.5" y="150" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qzO-Yz-DDD"/>
+                                            <constraint firstAttribute="width" constant="150" id="vON-7m-UkW"/>
+                                        </constraints>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Leads">
                                                     <attributes>
@@ -74,27 +97,55 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="QaF-Za-Jzf" kind="show" id="pUG-yA-qAM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.54117647059999996" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kJS-hF-8la" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="79z-3X-gXU"/>
                             <constraint firstItem="kJS-hF-8la" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AOS-Rb-y8L"/>
                             <constraint firstItem="kJS-hF-8la" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="O72-t0-AhO"/>
-                            <constraint firstItem="kJS-hF-8la" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="xd9-bd-SfO"/>
+                            <constraint firstItem="kJS-hF-8la" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UNA-w6-8lL"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--AccountsList-->
+        <scene sceneID="Ogv-ww-Jlm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Accounts" referencedIdentifier="AccountsList" id="Sae-bg-Wxd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0Z-c9-wNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-25"/>
+        </scene>
+        <!--OpportunityList-->
+        <scene sceneID="ewC-a9-rjM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OpportunityList" id="BlX-Gc-ku8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmB-IP-kwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="74"/>
+        </scene>
+        <!--ContactList-->
+        <scene sceneID="BgH-NP-sG1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContactList" id="o2c-eC-nn6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdA-zG-KdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="203"/>
+        </scene>
+        <!--LeadsList-->
+        <scene sceneID="2KC-Wr-DZj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LeadsList" id="QaF-Za-Jzf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njv-Yh-vrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="309"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="Account" width="40" height="40"/>
-        <image name="Contacts" width="40" height="42"/>
-        <image name="Leads" width="40" height="40"/>
-        <image name="Opportunity" width="44" height="44"/>
-    </resources>
 </document>
