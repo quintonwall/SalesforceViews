@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -104,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="956" y="151.57421289355324"/>
         </scene>
-        <!--Title-->
+        <!--Account Detail-->
         <scene sceneID="MTE-yi-bhg">
             <objects>
-                <viewController storyboardIdentifier="AccountDetails" id="a8b-fs-Uf1" customClass="AccountDetailsViewController" customModule="SalesforceViews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountDetails" id="a8b-fs-Uf1" userLabel="Account Detail" customClass="AccountDetailsViewController" customModule="SalesforceViews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fBI-yL-ArZ"/>
                         <viewControllerLayoutGuide type="bottom" id="LCi-p6-UPr"/>
@@ -115,7 +116,104 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="AcountsDetail" id="4OD-ZF-dti">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0f-QL-ojE" userLabel="Account Detail">
+                                <rect key="frame" x="0.0" y="64" width="375" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Owner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-wQ-29X" userLabel="owner Label">
+                                        <rect key="frame" x="10" y="15" width="99" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gR-oD-tbV" userLabel="owner TF">
+                                        <rect key="frame" x="117" y="10" width="225" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPC-Uy-tRz" userLabel="name Label">
+                                        <rect key="frame" x="10" y="57" width="94.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ta6-Mf-Bgt" userLabel="name TF">
+                                        <rect key="frame" x="117" y="52" width="225" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-hi-0eq" userLabel="phone Label">
+                                        <rect key="frame" x="8" y="98" width="94.5" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-RQ-Yfz" userLabel="phone TF">
+                                        <rect key="frame" x="117" y="92" width="225" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgV-Pt-Tho" userLabel="fax Label">
+                                        <rect key="frame" x="8" y="137" width="94.5" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6x-4T-njd" userLabel="fax TF">
+                                        <rect key="frame" x="117" y="130" width="225" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iPC-Uy-tRz" firstAttribute="top" secondItem="8cC-wQ-29X" secondAttribute="bottom" constant="25" id="8Ng-sv-Y2T"/>
+                                    <constraint firstAttribute="height" constant="165" id="8XL-iv-7ys"/>
+                                    <constraint firstItem="2gR-oD-tbV" firstAttribute="width" secondItem="l0f-QL-ojE" secondAttribute="width" multiplier="0.6" id="Bv6-mj-txU"/>
+                                    <constraint firstItem="8cC-wQ-29X" firstAttribute="top" secondItem="l0f-QL-ojE" secondAttribute="top" constant="15" id="Qml-C2-sTx"/>
+                                    <constraint firstItem="2gR-oD-tbV" firstAttribute="leading" secondItem="8cC-wQ-29X" secondAttribute="trailing" constant="8" id="XI8-m2-NOi"/>
+                                    <constraint firstItem="iPC-Uy-tRz" firstAttribute="leading" secondItem="l0f-QL-ojE" secondAttribute="leading" constant="10" id="aEu-Id-FrS"/>
+                                    <constraint firstItem="2gR-oD-tbV" firstAttribute="top" secondItem="l0f-QL-ojE" secondAttribute="top" constant="10" id="gHA-eH-Org"/>
+                                    <constraint firstItem="iPC-Uy-tRz" firstAttribute="top" secondItem="8cC-wQ-29X" secondAttribute="bottom" constant="25" id="qxZ-dC-hIR"/>
+                                    <constraint firstItem="8cC-wQ-29X" firstAttribute="leading" secondItem="l0f-QL-ojE" secondAttribute="leading" constant="10" id="tAr-XB-58N"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-30-vAY" userLabel="Billing Address">
+                                <rect key="frame" x="-0.5" y="229" width="375" height="320"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="L0c-dd-5px"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22O-cn-Mc1" userLabel="Shipping Address">
+                                <rect key="frame" x="0.0" y="549" width="375" height="320"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Zpw-BV-T1t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l0f-QL-ojE" firstAttribute="width" secondItem="4OD-ZF-dti" secondAttribute="width" id="Fdm-OT-6na"/>
+                            <constraint firstItem="afQ-30-vAY" firstAttribute="top" secondItem="l0f-QL-ojE" secondAttribute="bottom" id="Mba-Cs-Nlp"/>
+                            <constraint firstItem="afQ-30-vAY" firstAttribute="width" secondItem="4OD-ZF-dti" secondAttribute="width" id="TCT-hc-pC4"/>
+                            <constraint firstItem="afQ-30-vAY" firstAttribute="centerX" secondItem="4OD-ZF-dti" secondAttribute="centerX" id="XqS-gh-HN8"/>
+                            <constraint firstItem="l0f-QL-ojE" firstAttribute="top" secondItem="fBI-yL-ArZ" secondAttribute="bottom" id="crD-SL-sHn"/>
+                            <constraint firstItem="22O-cn-Mc1" firstAttribute="centerX" secondItem="4OD-ZF-dti" secondAttribute="centerX" id="dcs-5x-dkY"/>
+                            <constraint firstItem="22O-cn-Mc1" firstAttribute="top" secondItem="afQ-30-vAY" secondAttribute="bottom" id="e7f-gd-Dkb"/>
+                            <constraint firstItem="22O-cn-Mc1" firstAttribute="width" secondItem="4OD-ZF-dti" secondAttribute="width" id="jnn-wg-NNh"/>
+                            <constraint firstItem="l0f-QL-ojE" firstAttribute="centerX" secondItem="4OD-ZF-dti" secondAttribute="centerX" id="vfj-6i-74C"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="0ut-2F-4d1" userLabel="Navigation Item">
@@ -127,8 +225,14 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="billingAddressView" destination="afQ-30-vAY" id="UN9-om-8tq"/>
+                        <outlet property="faxTF" destination="a6x-4T-njd" id="LZq-E6-fmQ"/>
+                        <outlet property="name" destination="Ta6-Mf-Bgt" id="2H0-0a-4Di"/>
                         <outlet property="navItem" destination="0ut-2F-4d1" id="fcw-tb-6QR"/>
+                        <outlet property="ownerTF" destination="2gR-oD-tbV" id="TvN-Lg-H5W"/>
+                        <outlet property="phoneTF" destination="HO0-RQ-Yfz" id="jxf-P4-RAz"/>
                         <outlet property="rightBarButton" destination="1D5-3y-oyE" id="h1C-Oh-5SV"/>
+                        <outlet property="shippingAddressView" destination="22O-cn-Mc1" id="fkb-8o-cso"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxT-Uh-vnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,6 +256,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jek-pM-6oR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16.800000000000001" y="151.57421289355324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4CK-Bn-RD7">
+            <objects>
+                <viewController id="ZyS-7J-tdA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zBw-9b-Mmu"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLO-sv-Ix4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8iS-qu-59l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grd-8L-b9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

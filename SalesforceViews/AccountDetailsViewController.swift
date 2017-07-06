@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 import SObjectKit
 
-class AccountDetailsViewController : UITableViewController {
+class AccountDetailsViewController : UIViewController {
     
     @IBOutlet weak var rightBarButton: UIBarButtonItem!
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var accountNumberTF: UITextField!
-    @IBOutlet weak var annualRevenueTF: UITextField!
+    @IBOutlet weak var ownerTF: UITextField!
+    @IBOutlet weak var phoneTF: UITextField!
+    @IBOutlet weak var faxTF: UITextField!
     @IBOutlet weak var shippingAddressView: UIView!
     @IBOutlet weak var billingAddressView: UIView!
     
@@ -42,21 +43,28 @@ class AccountDetailsViewController : UITableViewController {
         
         navItem.title = sobjectdata?.Name
         name?.text = sobjectdata?.Name
-        accountNumberTF.text = sobjectdata?.AccountNumber
+       // accountNumberTF.text = sobjectdata?.AccountNumber
         //annualRevenueTF.text = sobjectdata?.AnnualRevenue.currencyString
-        annualRevenueTF.text = String(describing: sobjectdata!.AnnualRevenue)
+        //ownerTF.text = sobjectdata!
+        phoneTF.text = sobjectdata!.Phone
+        faxTF.text = sobjectdata!.Fax
+       // annualRevenueTF.text = String(describing: sobjectdata!.AnnualRevenue)
         
-        let shipview = Bundle.loadView(fromNib: "Address", withType: AddressViewController.self)
-        shipview.title = "Shipping Address"
-        shipview.sobjectdata = sobjectdata?.ShippingAddress
-        shippingAddressView.addSubview(shipview)
+        
         
         let billview = Bundle.loadView(fromNib: "Address", withType: AddressViewController.self)
         billview.title = "Billing Address"
         billview.sobjectdata = sobjectdata?.BillingAddress
         billingAddressView.addSubview(billview)
-
         
+        
+        let shipview = Bundle.loadView(fromNib: "Address", withType: AddressViewController.self)
+        shipview.title = "Shipping Address"
+        shipview.sobjectdata = sobjectdata?.ShippingAddress
+        shippingAddressView.addSubview(shipview)
+         
+        
+        setEditState(enabled: false)
         
     }
     
@@ -82,15 +90,18 @@ class AccountDetailsViewController : UITableViewController {
     private func setEditState(enabled: Bool) {
         name.isEnabled = enabled
         
+        var bstyle : UITextBorderStyle = .none
+        
         if (enabled) {
-            name.borderStyle = .roundedRect
-            accountNumberTF.borderStyle = .roundedRect
-            annualRevenueTF.borderStyle = .roundedRect
-            
-        }else {
-            name.borderStyle = .none
-            accountNumberTF.borderStyle = .none
-            annualRevenueTF.borderStyle = .none
+            bstyle = .roundedRect
         }
+        
+            name.borderStyle = bstyle
+            //accountNumberTF.borderStyle = bstyle
+            //annualRevenueTF.borderStyle = bstyle
+            ownerTF.borderStyle = bstyle
+            phoneTF.borderStyle = bstyle
+            faxTF.borderStyle = bstyle
     }
+    
 }
