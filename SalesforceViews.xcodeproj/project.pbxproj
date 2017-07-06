@@ -26,6 +26,10 @@
 		5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */; };
 		5AA381091EA0DAE000C218CF /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AA381081EA0DAE000C218CF /* testdata.json */; };
 		A0D6051D790EDDD56FCC1501 /* Pods_SalesforceViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */; };
+		E748A7D41F0EDC310066A118 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D31F0EDC310066A118 /* Contacts.storyboard */; };
+		E748A7D81F0EDC760066A118 /* Opportunities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D71F0EDC760066A118 /* Opportunities.storyboard */; };
+		E748A7DA1F0EDC8C0066A118 /* Leads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D91F0EDC8C0066A118 /* Leads.storyboard */; };
+		E748A7DC1F0EDF8E0066A118 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E748A7DB1F0EDF8E0066A118 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		5AA381081EA0DAE000C218CF /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
 		A72D5A8C0A8CC7900B82B60C /* Pods-SalesforceViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.release.xcconfig"; sourceTree = "<group>"; };
 		D902FA555E183751E0AD0703 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
+		E748A7D31F0EDC310066A118 /* Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		E748A7D71F0EDC760066A118 /* Opportunities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opportunities.storyboard; sourceTree = "<group>"; };
+		E748A7D91F0EDC8C0066A118 /* Leads.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leads.storyboard; sourceTree = "<group>"; };
+		E748A7DB1F0EDF8E0066A118 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 				5A0FF9871E8EBBBC00DE6A2C /* Info.plist */,
 				5A0FF97F1E8EBBBC00DE6A2C /* Main.storyboard */,
 				5A0FF9841E8EBBBC00DE6A2C /* LaunchScreen.storyboard */,
+				E748A7DB1F0EDF8E0066A118 /* LoginViewController.swift */,
 			);
 			name = SampleApp;
 			sourceTree = "<group>";
@@ -121,6 +130,9 @@
 		5A7DDFA11E98BBDC003B5F93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E748A7D61F0EDC640066A118 /* Opportunity */,
+				E748A7D51F0EDC5C0066A118 /* Lead */,
+				E748A7D21F0EDC1D0066A118 /* Contact */,
 				5A7DDFAA1E98C32F003B5F93 /* Address */,
 				5A7DDF9D1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift */,
 				5A7DDFA01E98BBD0003B5F93 /* Extensions */,
@@ -165,6 +177,30 @@
 				3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E748A7D21F0EDC1D0066A118 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E748A7D31F0EDC310066A118 /* Contacts.storyboard */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		E748A7D51F0EDC5C0066A118 /* Lead */ = {
+			isa = PBXGroup;
+			children = (
+				E748A7D91F0EDC8C0066A118 /* Leads.storyboard */,
+			);
+			name = Lead;
+			sourceTree = "<group>";
+		};
+		E748A7D61F0EDC640066A118 /* Opportunity */ = {
+			isa = PBXGroup;
+			children = (
+				E748A7D71F0EDC760066A118 /* Opportunities.storyboard */,
+			);
+			name = Opportunity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +270,10 @@
 				5A7DDFAC1E98C34D003B5F93 /* Address.xib in Resources */,
 				5A9F35D21E97328300B64E72 /* Accounts.storyboard in Resources */,
 				5A0FF9831E8EBBBC00DE6A2C /* Assets.xcassets in Resources */,
+				E748A7D81F0EDC760066A118 /* Opportunities.storyboard in Resources */,
+				E748A7DA1F0EDC8C0066A118 /* Leads.storyboard in Resources */,
 				5A0FF9811E8EBBBC00DE6A2C /* Main.storyboard in Resources */,
+				E748A7D41F0EDC310066A118 /* Contacts.storyboard in Resources */,
 				5AA381091EA0DAE000C218CF /* testdata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +344,7 @@
 				5A7DDFB01E98CC88003B5F93 /* AccountDetailsViewController.swift in Sources */,
 				5A0FF97C1E8EBBBC00DE6A2C /* AppDelegate.swift in Sources */,
 				5A7DDFA91E98BC3E003B5F93 /* UIView.swift in Sources */,
+				E748A7DC1F0EDF8E0066A118 /* LoginViewController.swift in Sources */,
 				5A7DDFA71E98BC3E003B5F93 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
