@@ -13,11 +13,11 @@ import SObjectKit
 class AccountTableViewCellController: UITableViewCell {
     
     
-    public var sobjectdata : Account? {
+    public var account : Account? {
         didSet {
-            NameLabel.text = sobjectdata?.Name
-            tickerLabel.text = sobjectdata?.TickerSymbol
-            industryLabel.text = sobjectdata?.Industry
+            NameLabel.text = account?.Name
+            tickerLabel.text = account?.TickerSymbol
+            industryLabel.text = account?.Industry
         }
     }
     

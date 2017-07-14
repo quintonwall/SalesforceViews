@@ -70,7 +70,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-Pe-uiH" userLabel="Map">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-Pe-uiH" userLabel="Map" customClass="MGLMapView">
                     <rect key="frame" x="4" y="145" width="367.5" height="170"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="170" id="Abw-5c-f5j"/>
@@ -104,7 +104,7 @@
             <connections>
                 <outlet property="cityLabel" destination="XaH-1j-UiR" id="2ly-QU-sg6"/>
                 <outlet property="countryLabel" destination="Jbc-uT-ROg" id="oiZ-2Q-6Ir"/>
-                <outlet property="mapView" destination="uYJ-Pe-uiH" id="x9O-X2-dyH"/>
+                <outlet property="mapView" destination="uYJ-Pe-uiH" id="zQe-e5-5n9"/>
                 <outlet property="stateLabel" destination="Y2n-TA-kO9" id="C2q-Tc-rPg"/>
                 <outlet property="streetLabel" destination="2kO-hi-5Up" id="ygN-mV-Oxm"/>
                 <outlet property="titleLabel" destination="Kuo-gV-QSm" id="RgG-WB-9Z6"/>

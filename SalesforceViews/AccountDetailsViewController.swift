@@ -51,7 +51,6 @@ class AccountDetailsViewController : UIViewController {
        // annualRevenueTF.text = String(describing: sobjectdata!.AnnualRevenue)
         
         
-        
         let billview = Bundle.loadView(fromNib: "Address", withType: AddressViewController.self)
         billview.title = "Billing Address"
         billview.sobjectdata = sobjectdata?.BillingAddress

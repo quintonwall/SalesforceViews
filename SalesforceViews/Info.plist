@@ -47,6 +47,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoicXVpbnRvbndhbGwiLCJhIjoiY2ozZjNlYjZ6MDBnNTJ3cGM1Yzdsdmx0NiJ9.5oWBavbMaGMGwx-tppjPSA</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

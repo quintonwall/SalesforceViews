@@ -14,8 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         
         //check if user is already logged in, if not, SwiftlySalesforce will handle the login dialog.
         salesforce.identity()
@@ -30,7 +28,6 @@ class ViewController: UIViewController {
     
     @IBAction func AccountButtonTapped(_ sender: UIButton) {
         
-        
         var data : [Account]?
         
         first {
@@ -42,9 +39,11 @@ class ViewController: UIViewController {
                  data = Account.populateToCollection(result.records as NSArray) as? [Account]
                 
                 //show the storyboard
+                
                 let storyboard = UIStoryboard(name: "Accounts", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "AccountsList") as! UINavigationController
                 self.present(controller, animated: true, completion: nil)
+                
                 
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: ViewNotifications.accountList), object: data)
                 
@@ -52,8 +51,6 @@ class ViewController: UIViewController {
                 _ = error as! SalesforceError
                 print(error)
             }
-        
-        
     }
  
     

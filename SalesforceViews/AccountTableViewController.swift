@@ -73,7 +73,7 @@ class AccountTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as! AccountTableViewCellController
 
-        cell.sobjectdata = sobjectdata?[indexPath.row]
+        cell.account = sobjectdata?[indexPath.row]
         
         return cell
     }
