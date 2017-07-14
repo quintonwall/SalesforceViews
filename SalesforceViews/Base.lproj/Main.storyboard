@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="74"/>
+            <point key="canvasLocation" x="-452" y="66"/>
         </scene>
         <!--AccountsList-->
         <scene sceneID="Ogv-ww-Jlm">
@@ -122,7 +122,7 @@
                 <viewControllerPlaceholder storyboardName="Accounts" referencedIdentifier="AccountsList" id="Sae-bg-Wxd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0Z-c9-wNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="6"/>
+            <point key="canvasLocation" x="198" y="-2"/>
         </scene>
         <!--OpportunitiesList-->
         <scene sceneID="ewC-a9-rjM">
@@ -130,7 +130,7 @@
                 <viewControllerPlaceholder storyboardName="Opportunities" referencedIdentifier="OpportunitiesList" id="BlX-Gc-ku8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmB-IP-kwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466" y="54"/>
+            <point key="canvasLocation" x="223" y="47"/>
         </scene>
         <!--ContactsList-->
         <scene sceneID="BgH-NP-sG1">
@@ -138,7 +138,7 @@
                 <viewControllerPlaceholder storyboardName="Contacts" referencedIdentifier="ContactsList" id="o2c-eC-nn6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdA-zG-KdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="97"/>
+            <point key="canvasLocation" x="199" y="89"/>
         </scene>
         <!--LeadsList-->
         <scene sceneID="2KC-Wr-DZj">
@@ -146,7 +146,7 @@
                 <viewControllerPlaceholder storyboardName="Leads" referencedIdentifier="LeadsList" id="QaF-Za-Jzf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njv-Yh-vrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428" y="139"/>
+            <point key="canvasLocation" x="186" y="131"/>
         </scene>
     </scenes>
 </document>
