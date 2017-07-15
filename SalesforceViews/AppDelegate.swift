@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate {
         
         configureSalesforce(consumerKey: consumerKey, redirectURL: redirectURL)
         
+        
+        //set theme for SalesforceViews
+        ThemeManager.shared.set(newtheme: BumbleBeeTheme())
+        
         return true
     }
     

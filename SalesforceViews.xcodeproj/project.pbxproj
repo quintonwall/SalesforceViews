@@ -26,6 +26,9 @@
 		5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F35D31E97369100B64E72 /* AccountTableViewController.swift */; };
 		5AA381091EA0DAE000C218CF /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AA381081EA0DAE000C218CF /* testdata.json */; };
 		A0D6051D790EDDD56FCC1501 /* Pods_SalesforceViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */; };
+		E71864FD1F1940FF004B8A17 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71864FC1F1940FF004B8A17 /* ThemeManager.swift */; };
+		E71865011F1948F3004B8A17 /* TerminalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71865001F1948F3004B8A17 /* TerminalTheme.swift */; };
+		E71865031F194907004B8A17 /* BumbleBeeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71865021F194907004B8A17 /* BumbleBeeTheme.swift */; };
 		E748A7D41F0EDC310066A118 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D31F0EDC310066A118 /* Contacts.storyboard */; };
 		E748A7D81F0EDC760066A118 /* Opportunities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D71F0EDC760066A118 /* Opportunities.storyboard */; };
 		E748A7DA1F0EDC8C0066A118 /* Leads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D91F0EDC8C0066A118 /* Leads.storyboard */; };
@@ -56,6 +59,9 @@
 		5AA381081EA0DAE000C218CF /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
 		A72D5A8C0A8CC7900B82B60C /* Pods-SalesforceViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.release.xcconfig"; sourceTree = "<group>"; };
 		D902FA555E183751E0AD0703 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
+		E71864FC1F1940FF004B8A17 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		E71865001F1948F3004B8A17 /* TerminalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalTheme.swift; sourceTree = "<group>"; };
+		E71865021F194907004B8A17 /* BumbleBeeTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleBeeTheme.swift; sourceTree = "<group>"; };
 		E748A7D31F0EDC310066A118 /* Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		E748A7D71F0EDC760066A118 /* Opportunities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opportunities.storyboard; sourceTree = "<group>"; };
 		E748A7D91F0EDC8C0066A118 /* Leads.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leads.storyboard; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		5A0FF97A1E8EBBBC00DE6A2C /* SalesforceViews */ = {
 			isa = PBXGroup;
 			children = (
+				E71864F91F193BF8004B8A17 /* Themes */,
 				5A7DDFA11E98BBDC003B5F93 /* Views */,
 				5A7DDF9F1E98BAD0003B5F93 /* SampleApp */,
 				5A0FF9821E8EBBBC00DE6A2C /* Assets.xcassets */,
@@ -177,6 +184,16 @@
 				3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E71864F91F193BF8004B8A17 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				E71864FC1F1940FF004B8A17 /* ThemeManager.swift */,
+				E71865001F1948F3004B8A17 /* TerminalTheme.swift */,
+				E71865021F194907004B8A17 /* BumbleBeeTheme.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		E748A7D21F0EDC1D0066A118 /* Contact */ = {
@@ -338,6 +355,7 @@
 				5A7DDF9E1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift in Sources */,
 				5A7DDFA61E98BC3E003B5F93 /* UIColor.swift in Sources */,
 				5A7DDFAE1E98C550003B5F93 /* AddressViewController.swift in Sources */,
+				E71865031F194907004B8A17 /* BumbleBeeTheme.swift in Sources */,
 				5A9F35D01E972F8A00B64E72 /* AccountTableCellViewController.swift in Sources */,
 				5A0FF97E1E8EBBBC00DE6A2C /* ViewController.swift in Sources */,
 				5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */,
@@ -346,6 +364,8 @@
 				5A7DDFA91E98BC3E003B5F93 /* UIView.swift in Sources */,
 				E748A7DC1F0EDF8E0066A118 /* LoginViewController.swift in Sources */,
 				5A7DDFA71E98BC3E003B5F93 /* UIImage.swift in Sources */,
+				E71865011F1948F3004B8A17 /* TerminalTheme.swift in Sources */,
+				E71864FD1F1940FF004B8A17 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

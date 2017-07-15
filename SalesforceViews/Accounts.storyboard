@@ -10,6 +10,11 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Account Table View Controller-->
         <scene sceneID="8WG-jb-W8Z">
@@ -24,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfC-F7-MVC" id="Q25-9a-BCI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niR-1s-md2" userLabel="LeftColorView">
@@ -64,7 +69,7 @@
                                                 <constraint firstAttribute="height" constant="30" id="aJf-zj-Qko"/>
                                                 <constraint firstAttribute="width" constant="200" id="xeR-VR-rbQ"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -226,10 +231,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="billingAddressView" destination="afQ-30-vAY" id="UN9-om-8tq"/>
+                        <outlet property="faxLabel" destination="fgV-Pt-Tho" id="xwe-cq-uVQ"/>
                         <outlet property="faxTF" destination="a6x-4T-njd" id="LZq-E6-fmQ"/>
                         <outlet property="name" destination="Ta6-Mf-Bgt" id="2H0-0a-4Di"/>
+                        <outlet property="nameLabel" destination="iPC-Uy-tRz" id="UeQ-Xa-jcz"/>
                         <outlet property="navItem" destination="0ut-2F-4d1" id="fcw-tb-6QR"/>
+                        <outlet property="ownerLabel" destination="8cC-wQ-29X" id="gM1-V9-nWk"/>
                         <outlet property="ownerTF" destination="2gR-oD-tbV" id="TvN-Lg-H5W"/>
+                        <outlet property="phoneLabel" destination="R5v-hi-0eq" id="Kj3-Ra-4Fj"/>
                         <outlet property="phoneTF" destination="HO0-RQ-Yfz" id="jxf-P4-RAz"/>
                         <outlet property="rightBarButton" destination="1D5-3y-oyE" id="h1C-Oh-5SV"/>
                         <outlet property="shippingAddressView" destination="22O-cn-Mc1" id="fkb-8o-cso"/>
