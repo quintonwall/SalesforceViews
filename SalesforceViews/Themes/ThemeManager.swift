@@ -27,40 +27,49 @@ class ThemeManager {
     
     public static let shared = ThemeManager()
     
-    private var theme : Theme = TerminalTheme()
+    private var theme : Theme?
     
-    public func set(newtheme: Theme) {
+    public func set(newtheme: Theme?) {
         
-        theme = newtheme
-        
-        let sharedApplication = UIApplication.shared
-        //standard font attributes for labels
-        let labelattrs = [
-            NSForegroundColorAttributeName: theme.labelFontColor,
-            NSFontAttributeName: theme.labelFont
-        ]
-        //UILabel.appearance().
-        
-        
-        //main colors
-        sharedApplication.delegate?.window??.tintColor = theme.mainColor
-        UIView.appearance().backgroundColor = theme.mainColor
-        
-        //nav bar
-        UINavigationBar.appearance().backgroundColor = theme.navigationBarColor
-       // UINavigationBar.appearance().
-        
-        let navbarattrs = [
-            NSForegroundColorAttributeName: theme.navigationBarFontColor,
-            NSFontAttributeName: theme.navigationBarFont
-        ]
-        
-        UINavigationBar.appearance().titleTextAttributes = navbarattrs
-        
-        
+        if let theme = newtheme {
+            
+            
+            let sharedApplication = UIApplication.shared
+            //standard font attributes for labels
+            let labelattrs = [
+                NSForegroundColorAttributeName: theme.labelFontColor,
+                NSFontAttributeName: theme.labelFont
+            ]
+            
+
+            
+            
+            //main colors
+            sharedApplication.delegate?.window??.tintColor = theme.mainColor
+            //UIView.appearance().backgroundColor = theme.mainColor
+            
+            //nav bar
+            UINavigationBar.appearance().tintColor = theme.navigationBarFontColor
+            UINavigationBar.appearance().barTintColor = theme.navigationBarColor
+            
+            let navbarattrs = [
+                NSForegroundColorAttributeName: theme.navigationBarFontColor,
+                NSFontAttributeName: theme.navigationBarFont
+            ]
+            
+            UINavigationBar.appearance().titleTextAttributes = navbarattrs
+            
+            
+            //labels
+            UILabel.appearance().defaultFont = theme.labelFont
+            UILabel.appearance().defaultTextColor = theme.labelFontColor
+            
+            
+           
+        }
     }
     
-    public func currentTheme() -> Theme {
+    public func currentTheme() -> Theme? {
         return theme
     }
     

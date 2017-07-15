@@ -27,8 +27,8 @@
 		5AA381091EA0DAE000C218CF /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AA381081EA0DAE000C218CF /* testdata.json */; };
 		A0D6051D790EDDD56FCC1501 /* Pods_SalesforceViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA1387C6D8E2814DD2B2CC7 /* Pods_SalesforceViews.framework */; };
 		E71864FD1F1940FF004B8A17 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71864FC1F1940FF004B8A17 /* ThemeManager.swift */; };
-		E71865011F1948F3004B8A17 /* TerminalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71865001F1948F3004B8A17 /* TerminalTheme.swift */; };
-		E71865031F194907004B8A17 /* BumbleBeeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71865021F194907004B8A17 /* BumbleBeeTheme.swift */; };
+		E72EAF851F1A7FDF00C637E4 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EAF841F1A7FDF00C637E4 /* Themes.swift */; };
+		E72EAF871F1A851600C637E4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EAF861F1A851600C637E4 /* UILabel.swift */; };
 		E748A7D41F0EDC310066A118 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D31F0EDC310066A118 /* Contacts.storyboard */; };
 		E748A7D81F0EDC760066A118 /* Opportunities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D71F0EDC760066A118 /* Opportunities.storyboard */; };
 		E748A7DA1F0EDC8C0066A118 /* Leads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E748A7D91F0EDC8C0066A118 /* Leads.storyboard */; };
@@ -60,8 +60,8 @@
 		A72D5A8C0A8CC7900B82B60C /* Pods-SalesforceViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.release.xcconfig"; sourceTree = "<group>"; };
 		D902FA555E183751E0AD0703 /* Pods-SalesforceViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesforceViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesforceViews/Pods-SalesforceViews.debug.xcconfig"; sourceTree = "<group>"; };
 		E71864FC1F1940FF004B8A17 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		E71865001F1948F3004B8A17 /* TerminalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalTheme.swift; sourceTree = "<group>"; };
-		E71865021F194907004B8A17 /* BumbleBeeTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleBeeTheme.swift; sourceTree = "<group>"; };
+		E72EAF841F1A7FDF00C637E4 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		E72EAF861F1A851600C637E4 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		E748A7D31F0EDC310066A118 /* Contacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		E748A7D71F0EDC760066A118 /* Opportunities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Opportunities.storyboard; sourceTree = "<group>"; };
 		E748A7D91F0EDC8C0066A118 /* Leads.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leads.storyboard; sourceTree = "<group>"; };
@@ -130,6 +130,7 @@
 				5A7DDFA31E98BC3E003B5F93 /* UIImage.swift */,
 				5A7DDFA41E98BC3E003B5F93 /* UIImageView.swift */,
 				5A7DDFA51E98BC3E003B5F93 /* UIView.swift */,
+				E72EAF861F1A851600C637E4 /* UILabel.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -190,8 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				E71864FC1F1940FF004B8A17 /* ThemeManager.swift */,
-				E71865001F1948F3004B8A17 /* TerminalTheme.swift */,
-				E71865021F194907004B8A17 /* BumbleBeeTheme.swift */,
+				E72EAF841F1A7FDF00C637E4 /* Themes.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -350,12 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72EAF851F1A7FDF00C637E4 /* Themes.swift in Sources */,
 				5A7DDFA81E98BC3E003B5F93 /* UIImageView.swift in Sources */,
 				5A7DDFB21E98D29C003B5F93 /* Bundle.swift in Sources */,
 				5A7DDF9E1E98BAC2003B5F93 /* SalesforceViewsDefaults.swift in Sources */,
 				5A7DDFA61E98BC3E003B5F93 /* UIColor.swift in Sources */,
 				5A7DDFAE1E98C550003B5F93 /* AddressViewController.swift in Sources */,
-				E71865031F194907004B8A17 /* BumbleBeeTheme.swift in Sources */,
+				E72EAF871F1A851600C637E4 /* UILabel.swift in Sources */,
 				5A9F35D01E972F8A00B64E72 /* AccountTableCellViewController.swift in Sources */,
 				5A0FF97E1E8EBBBC00DE6A2C /* ViewController.swift in Sources */,
 				5A9F35D41E97369100B64E72 /* AccountTableViewController.swift in Sources */,
@@ -364,7 +365,6 @@
 				5A7DDFA91E98BC3E003B5F93 /* UIView.swift in Sources */,
 				E748A7DC1F0EDF8E0066A118 /* LoginViewController.swift in Sources */,
 				5A7DDFA71E98BC3E003B5F93 /* UIImage.swift in Sources */,
-				E71865011F1948F3004B8A17 /* TerminalTheme.swift in Sources */,
 				E71864FD1F1940FF004B8A17 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,6 +21,11 @@ class AccountDetailsViewController : UIViewController {
     @IBOutlet weak var shippingAddressView: UIView!
     @IBOutlet weak var billingAddressView: UIView!
     
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var faxLabel: UILabel!
+    @IBOutlet weak var ownerLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     public var sobjectdata : Account? {
         didSet {
             
@@ -41,8 +46,11 @@ class AccountDetailsViewController : UIViewController {
 
         
         
+        
         navItem.title = sobjectdata?.Name
         name?.text = sobjectdata?.Name
+        
+        
        // accountNumberTF.text = sobjectdata?.AccountNumber
         //annualRevenueTF.text = sobjectdata?.AnnualRevenue.currencyString
         //ownerTF.text = sobjectdata!
@@ -64,6 +72,7 @@ class AccountDetailsViewController : UIViewController {
          
         
         setEditState(enabled: false)
+        setTheme()
         
     }
     
@@ -103,4 +112,10 @@ class AccountDetailsViewController : UIViewController {
             faxTF.borderStyle = bstyle
     }
     
+    
+    func setTheme() {
+         let theme  = ThemeManager.shared.currentTheme()
+        
+        //perform any other specific theme config you need here
+    }
 }

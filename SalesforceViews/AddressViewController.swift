@@ -60,11 +60,16 @@ class AddressViewController : UIView, MGLMapViewDelegate {
         super.awakeFromNib()
         
         mapView.delegate = self
-        streetLabel?.textColor = ColorPalette.primaryDark
-        cityLabel?.textColor = ColorPalette.primaryDark
-        zipLabel?.textColor = ColorPalette.primaryDark
-        stateLabel?.textColor = ColorPalette.primaryDark
-        countryLabel?.textColor = ColorPalette.primaryDark
+       // streetLabel?.textColor = ColorPalette.primaryDark
+        //cityLabel?.textColor = ColorPalette.primaryDark
+        //zipLabel?.textColor = ColorPalette.primaryDark
+        //stateLabel?.textColor = ColorPalette.primaryDark
+        //countryLabel?.textColor = ColorPalette.primaryDark
+        
+        titleLabel.isHeader = true
+        let theme  = ThemeManager.shared.currentTheme()
+        titleLabel.defaultFont = theme?.headerFont
+        titleLabel.defaultTextColor = theme?.headerFontColor
     }
     
     
