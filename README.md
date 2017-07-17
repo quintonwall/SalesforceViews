@@ -70,6 +70,7 @@ SalesforceViews also supports themes to allow you to quickly customize colors an
 ThemeManager.shared.set(newtheme: TerminalTheme())
 ```
 
+<img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/account-detail-no-theme.png?raw=true" width=270/>
 <img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/account-detail-themed.png?raw=true" width=270/>
 
 ###Creating your own themes
