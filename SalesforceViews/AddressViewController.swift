@@ -68,8 +68,20 @@ class AddressViewController : UIView, MGLMapViewDelegate {
         
         titleLabel.isHeader = true
         let theme  = ThemeManager.shared.currentTheme()
+        self.backgroundColor = theme?.mainColor
         titleLabel.defaultFont = theme?.headerFont
         titleLabel.defaultTextColor = theme?.headerFontColor
+        streetLabel.font = theme?.labelFont
+        streetLabel.textColor = theme?.labelFontColor
+        cityLabel.font = theme?.labelFont
+        cityLabel.textColor = theme?.labelFontColor
+        zipLabel.font = theme?.labelFont
+        zipLabel.textColor = theme?.labelFontColor
+        stateLabel.font = theme?.labelFont
+        stateLabel.textColor = theme?.labelFontColor
+        countryLabel.font = theme?.labelFont
+        countryLabel.textColor = theme?.labelFontColor
+        
     }
     
     

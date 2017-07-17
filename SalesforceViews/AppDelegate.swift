@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate {
         
         
         //set theme for SalesforceViews
-        //ThemeManager.shared.set(newtheme: ChalkboardTheme())
+        ThemeManager.shared.set(newtheme: TerminalTheme())
         
         return true
     }

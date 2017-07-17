@@ -28,6 +28,8 @@ class ChalkboardTheme: Theme {
     
     var navigationBarFont : UIFont { return UIFont(name: "Chalkduster", size: 22)! }
     
+    var selectedItemColor : UIColor { return .cloudsColor() }
+    
 }
 
 class TerminalTheme: Theme {
@@ -48,7 +50,9 @@ class TerminalTheme: Theme {
     
     var navigationBarFontColor : UIColor { return .cloudsColor() }
     
-    var navigationBarFont : UIFont { return UIFont(name: "Helvetica", size: 22)! }
+    var navigationBarFont : UIFont { return UIFont(name: "Courier", size: 22)! }
+    
+    var selectedItemColor : UIColor { return .wisteriaColor() }
     
 }
 
@@ -56,7 +60,7 @@ class BumbleBeeTheme: Theme {
     
     var mainColor : UIColor { return .sunflowerColor() }
     
-    var secondaryColor: UIColor { return UIColor.black }
+    var secondaryColor: UIColor { return .yellow }
     
     var labelFont: UIFont { return UIFont(name: "Helvetica", size: 16)! }
     
@@ -71,6 +75,8 @@ class BumbleBeeTheme: Theme {
     var navigationBarFontColor : UIColor { return .sunflowerColor() }
     
     var navigationBarFont : UIFont { return UIFont(name: "Helvetica", size: 22)! }
+    
+    var selectedItemColor : UIColor { return .yellow() }
 
 }
 

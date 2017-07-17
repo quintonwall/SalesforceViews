@@ -21,6 +21,7 @@ class AccountDetailsViewController : UIViewController {
     @IBOutlet weak var shippingAddressView: UIView!
     @IBOutlet weak var billingAddressView: UIView!
     
+    @IBOutlet weak var acctDetailsView: UIView!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var faxLabel: UILabel!
     @IBOutlet weak var ownerLabel: UILabel!
@@ -117,5 +118,7 @@ class AccountDetailsViewController : UIViewController {
          let theme  = ThemeManager.shared.currentTheme()
         
         //perform any other specific theme config you need here
+        acctDetailsView.backgroundColor = theme?.mainColor
+        
     }
 }

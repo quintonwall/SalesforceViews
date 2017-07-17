@@ -18,6 +18,7 @@ protocol Theme {
      var navigationBarColor : UIColor { get }
      var navigationBarFontColor : UIColor { get }
      var navigationBarFont : UIFont { get }
+    var selectedItemColor : UIColor { get }
 }
 
 
@@ -33,6 +34,7 @@ class ThemeManager {
         
         if let theme = newtheme {
             
+            self.theme = theme
             
             let sharedApplication = UIApplication.shared
             //standard font attributes for labels
@@ -64,8 +66,9 @@ class ThemeManager {
             UILabel.appearance().defaultFont = theme.labelFont
             UILabel.appearance().defaultTextColor = theme.labelFontColor
             
+            //Tables
+            //UITableViewCell.appearance()
             
-           
         }
     }
     

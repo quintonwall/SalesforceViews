@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfC-F7-MVC" id="Q25-9a-BCI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niR-1s-md2" userLabel="LeftColorView">
@@ -45,7 +45,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.12549019610000001" green="0.54117647059999996" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="HW9-hW-m9u" firstAttribute="centerX" secondItem="niR-1s-md2" secondAttribute="centerX" id="BSq-Wy-MPt"/>
                                                 <constraint firstItem="HW9-hW-m9u" firstAttribute="centerY" secondItem="niR-1s-md2" secondAttribute="centerY" id="I4t-ah-S2r"/>
@@ -194,14 +194,14 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afQ-30-vAY" userLabel="Billing Address">
                                 <rect key="frame" x="-0.5" y="229" width="375" height="320"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="L0c-dd-5px"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22O-cn-Mc1" userLabel="Shipping Address">
                                 <rect key="frame" x="0.0" y="549" width="375" height="320"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="Zpw-BV-T1t"/>
                                 </constraints>
@@ -230,6 +230,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="acctDetailsView" destination="l0f-QL-ojE" id="mAl-ci-nIZ"/>
                         <outlet property="billingAddressView" destination="afQ-30-vAY" id="UN9-om-8tq"/>
                         <outlet property="faxLabel" destination="fgV-Pt-Tho" id="xwe-cq-uVQ"/>
                         <outlet property="faxTF" destination="a6x-4T-njd" id="LZq-E6-fmQ"/>

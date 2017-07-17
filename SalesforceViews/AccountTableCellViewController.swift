@@ -26,18 +26,21 @@ class AccountTableViewCellController: UITableViewCell {
     @IBOutlet weak var tickerLabel: UILabel!
     @IBOutlet weak var leftColorView: UIView!
     
-   var leftTabColor : UIColor = ColorPalette.primaryDark {
-        didSet {
-            leftColorView.backgroundColor = leftTabColor
-        }
-    }
+   //var leftTabColor : UIColor = ColorPalette.primaryDark {
+     //   didSet {
+       //     leftColorView.backgroundColor = leftTabColor
+       // }
+    //}
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        NameLabel.textColor = ColorPalette.secondaryDark
-        industryLabel.textColor = ColorPalette.secondaryDark
-        tickerLabel.textColor = ColorPalette.tertiary
+        let theme  = ThemeManager.shared.currentTheme()
+        self.backgroundColor = theme?.mainColor
+        
+        leftColorView.backgroundColor = theme?.secondaryColor
+        tickerLabel.textColor = theme?.headerFontColor
+        
         
     }
     
