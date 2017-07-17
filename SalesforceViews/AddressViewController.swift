@@ -82,6 +82,8 @@ class AddressViewController : UIView, MGLMapViewDelegate {
         countryLabel.font = theme?.labelFont
         countryLabel.textColor = theme?.labelFontColor
         
+        
+        
     }
     
     
