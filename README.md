@@ -15,11 +15,14 @@ To add a reference to a SalesforceView, do the following:
 
 #### 1. Add Storyboard Reference
 Drag and drop a Storyboard Reference component onto your storyboard.
+
 <img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/storyboard-reference.png?raw=true" width=270/>
 
 #### 2. Configure the component
-Configure the Storyboard Reference with the  SalesforceView you want (eg: Account). Give it an identifier in the form of [objecttype]List. eg: AccountList
+Configure the Storyboard Reference with the  SalesforceView you want (eg: Account). Give it an identifier in the form of <pre>[objecttype]List</pre> eg: AccountList
+
 <img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/storyboard-account.png?raw=true" width=270/>
+
 
 #### 3. Create a seque to Storyboard Reference
 Create a seque to your new storyboard reference and give it a name like ShowAccounts. Your final storyboard will look something like this.
