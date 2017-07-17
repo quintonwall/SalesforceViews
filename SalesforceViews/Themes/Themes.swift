@@ -76,7 +76,7 @@ class BumbleBeeTheme: Theme {
     
     var navigationBarFont : UIFont { return UIFont(name: "Helvetica", size: 22)! }
     
-    var selectedItemColor : UIColor { return .yellow() }
+    var selectedItemColor : UIColor { return .yellow }
 
 }
 
