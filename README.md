@@ -105,7 +105,7 @@ class TerminalTheme: Theme {
 ## Components
 SalesforceViews also includes a number of components that can be used independently of the high level object views (eg: AccountsList). These components are created as .xib files.
 
-<img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/address-xib.png?raw=true" width=200/>
+<img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/address_xib.png?raw=true" width=270/>
 
 ### Using a Xib In Your Storyboards
 In order to use a xib in your own storyboard views, drag and resize a UIView components onto a storyboard, connect it to an outlet in your controller. Then, within your controller add the xib as a subview to the outlet. The example below instantiates the Address component and populates it with an SObjectKit Address object:
@@ -117,4 +117,4 @@ let billview = Bundle.loadView(fromNib: "Address", withType: AddressViewControll
        billingAddressView.addSubview(billview)
 ```
 
-<img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/address-component.png?raw=true" width=200/>
+<img src="https://github.com/quintonwall/SalesforceViews/blob/master/graphics/screenshots/address-component.png?raw=true" width=270/>
