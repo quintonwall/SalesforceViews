@@ -71,7 +71,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-Pe-uiH" userLabel="Map" customClass="MGLMapView">
-                    <rect key="frame" x="4" y="145" width="367.5" height="170"/>
+                    <rect key="frame" x="9.5" y="145" width="356.5" height="170"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="170" id="Abw-5c-f5j"/>
                     </constraints>
@@ -88,7 +88,7 @@
                 <constraint firstItem="Sj8-rk-jUB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.47" id="JOc-SL-DZs"/>
                 <constraint firstItem="Jbc-uT-ROg" firstAttribute="leading" secondItem="Y2n-TA-kO9" secondAttribute="trailing" constant="5" id="KcK-VH-Q1U"/>
                 <constraint firstItem="Jbc-uT-ROg" firstAttribute="top" secondItem="Sj8-rk-jUB" secondAttribute="bottom" constant="5" id="Kxh-WO-gGh"/>
-                <constraint firstItem="uYJ-Pe-uiH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.98" id="SHm-cf-IvI"/>
+                <constraint firstItem="uYJ-Pe-uiH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.95" id="SHm-cf-IvI"/>
                 <constraint firstItem="uYJ-Pe-uiH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SMJ-w4-iaG"/>
                 <constraint firstItem="XaH-1j-UiR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="XaW-rx-Vb3"/>
                 <constraint firstItem="Y2n-TA-kO9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="bK7-xQ-ang"/>
