@@ -8,7 +8,7 @@ end
 
 target 'SalesforceViews' do
   source 'https://github.com/CocoaPods/Specs.git'
-  pod 'SwiftlySalesforce'
+  pod 'SwiftlySalesforce', '3.3.1'
   pod 'Mapbox-iOS-SDK', '~> 3.6'
 
   #to allow stored properties on extensions
